@@ -3,7 +3,7 @@ function handleResponseFromAPI (promise) {
     console.log('Got a response from the API');
     return { status: 200, body: response };
   },
-  (error) => { return Error(); });
+  (error) => { return error; });
 }
 
 module.exports = handleResponseFromAPI;
