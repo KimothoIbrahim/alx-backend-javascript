@@ -10,6 +10,7 @@ process.stdin.on('readable', () => {
   }
 });
 
-process.on('SIGTERM', () => {
-  console.log('This important software is now closing\n');
+process.on('SIGINT', () => {
+  console.log('\n\nThis important software is now closing');
+  process.exit();
 });
