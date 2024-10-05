@@ -22,3 +22,6 @@ app.on('request', (request, response) => {
       });
   }
 });
+
+
+module.exports = app;
